@@ -15,13 +15,13 @@
 }
 
 .banner{
-    background-image: url(..//assets/images/home-header.png);
+    background-image: url(/assets/images/home-header.png);
     background-size: cover;
     background-position: left;
     height: calc(100vh - 80px);
     color: $secondary;
     @include pad{
-        background-image: url(../assets/images/home-header-sm.png);
+        background-image: url(/assets/images/home-header-sm.png);
     }
   .banner-text{
     height: 100%;
@@ -111,14 +111,14 @@
 }
 
 .famous{
-    background-image: url(..//assets/images/index-bg.png);
+    background-image: url(/assets/images/index-bg.png);
     background-size: cover;
     // background-position: center;
     @include pad{
-        background-image: url(..//assets/images/index-bg-sm.png);
+        background-image: url(/assets/images/index-bg-sm.png);
     }
     @include phone{
-        background-image: url(..//assets/images/index-bg-md.png);
+        background-image: url(/assets/images/index-bg-md.png);
     }
   &-wrapper h2{
     color: $white;
