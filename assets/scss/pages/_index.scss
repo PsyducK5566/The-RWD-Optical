@@ -151,21 +151,21 @@
 }
 
 .card-img-double{
-    background-image: url(..//assets/images/home-section4-1.png);
+    background-image: url(/assets/images/home-section4-1.png);
     background-size: cover;
     background-position: center;
     height:240px;
     @include phone{
-        background-image: url(..//assets/images/home-section4-1-sm.png);
+        background-image: url(/assets/images/home-section4-1-sm.png);
     }
 }
 .card-img-youth{
-    background-image: url(..//assets/images/home-section4-2.png);
+    background-image: url(/assets/images/home-section4-2.png);
     background-size: cover;
     background-position: center;
     height:240px;
     @include phone{
-        background-image: url(..//assets/images/home-section4-2-sm.png);
+        background-image: url(/assets/images/home-section4-2-sm.png);
     }
 }
 
