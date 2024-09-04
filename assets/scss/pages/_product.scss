@@ -2,14 +2,15 @@
     .categories{
         li{
             flex-grow: 1;
+            // 
             a{
                 display: block;
-                color: #000;
+                color: $black;
                 font-size: 2rem;
                 font-weight: 600;
                 padding-top: 24px;
                 padding-bottom: 24px;
-                border: 1px solid #DCDCDC;
+                border: 1px solid $gray-200;
                 text-align: center;
                 @include pad {
                     font-size: $font-l;
@@ -66,24 +67,24 @@
     }
   }  
 }
-// color
+// 
 .product{
-  &-color01,
-  &-color02{
+  &-style01,
+  &-style02{
     width: 24px;
     height: 24px;
     border-radius: 4px;
   }
-  &-color01{
+  &-style01{
     background-color: $brown-500;
   }
-  &-color02{
+  &-style02{
     background-color: $brown-200;
   }
 
 }
 
-// pagination
+// 
 .pagination{
     margin-top: 64px;
     @include mobile{

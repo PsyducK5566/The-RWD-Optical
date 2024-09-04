@@ -33,25 +33,48 @@
     &-item{
         @include mobile{
         width: 50%;
-        border: 1px solid $white;
-      
-        }       
-      &-link{
-          display: block;
-          padding: 25px 30px;
-          @include mobile{
-            padding-left: 0px;
-            padding-right:0px;
-          }
-        &:hover{
-            background-color: $white;
-            color: $primary;
-            
+        border: 1px solid $white;      
         }
+
+      a{
+        display: block;
+        color: $white;
+        // transition: .5s;
+
+        @include mobile{
+          padding-left: 0px;
+          padding-right:0px;
+        }
+      }
+      &-link{          
+          padding:25px 25px;
+          position: relative;
+      }
+      &-link:hover{
+        @include mobile{
+          color: $secondary;
+        }
+      }
+      
+      &-link::after{
+          content: "";
+          border-bottom: 3px solid $white;
+          position: absolute;
+          display: block;
+          transition: all .3s;
+          margin: auto;
+          width: 0%;
+      }
+      &-link:hover::after{    
+          width: 65%;
+          @include mobile{
+          width: 0%;
+          }
       }
     }
   }
 }
+
 
 
 
